@@ -1,0 +1,24 @@
+#!/bin/bash
+
+ipaddr=""
+thread=10
+
+while getopts ':t:i:' opt
+do
+    case "$opt"
+    in
+        t) thread=${OPTARG}
+	;;
+	i) ipaddr=${OPTARG}
+        ;;
+	:) echo "Exit"
+	;;
+	*) echo "Enter Valid Args"
+	;;
+	
+    esac
+done
+
+echo -e "\e[031mHello thread = $thread "
+
+echo -e "ipadd = $ipaddr \e[0m"
