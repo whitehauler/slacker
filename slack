@@ -19,6 +19,4 @@ do
     esac
 done
 
-echo -e "\e[031mHello thread = $thread "
 
-echo -e "ipadd = $ipaddr \e[0m"
